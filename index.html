@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Invitacion digital de boda para Janeth y Dante."
+    />
+    <title>Janeth & Dante | Nuestra boda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="petal-layer" id="petal-layer" aria-hidden="true"></div>
+
+    <div class="opening-screen" id="opening-screen">
+      <div class="opening-ornament opening-ornament--top-left"></div>
+      <div class="opening-ornament opening-ornament--bottom-right"></div>
+      <div class="opening-card">
+        <div class="opening-divider" aria-hidden="true">
+          <span></span>
+          <i>&hearts;</i>
+          <span></span>
+        </div>
+
+        <p class="opening-kicker">Estan invitados a:</p>
+        <h1 class="opening-title" id="opening-title">Nuestra Boda</h1>
+        <p class="opening-reserved">Con amor hemos reservado para ti</p>
+        <div class="opening-passes" id="opening-passes">2 pases</div>
+        <p class="opening-date" id="opening-date"></p>
+
+        <button class="opening-envelope-button" id="opening-envelope-button" type="button" aria-label="Abrir invitacion">
+          <img
+            class="opening-envelope-img"
+            src="assets/img/sobre_jd.png"
+            alt="Abrir invitacion"
+          />
+        </button>
+
+        <div class="opening-divider opening-divider--bottom" aria-hidden="true">
+          <span></span>
+          <i>&#10022;</i>
+          <span></span>
+        </div>
+
+        <button class="opening-button" id="open-invitation" type="button">
+          <span>Toca para abrir la invitacion</span>
+          <i aria-hidden="true">&rsaquo;</i>
+        </button>
+      </div>
+    </div>
+
+    <main class="page-shell is-locked" id="app"></main>
+
+    <audio id="wedding-audio" preload="metadata"></audio>
+  </body>
+</html>
