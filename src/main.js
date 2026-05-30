@@ -519,11 +519,12 @@ app.innerHTML = `
       divider: config.lotties.giftAccent,
       body: `
         <div class="yape-gift reveal">
+          <p class="yape-gift__owner">${config.names.bride}</p>
           <div class="yape-gift__frame">
             <img src="${config.gifts.yapeImage}" alt="Yape de Janeth" />
           </div>
           <div class="yape-copy-card" aria-label="Numero de Yape">
-            <span class="yape-copy-card__label">Numero de Yape</span>
+            <span class="yape-copy-card__label">Yape</span>
             <strong class="yape-copy-card__number">${config.gifts.yapeNumber}</strong>
             <button class="yape-copy-card__button" type="button" data-copy="${config.gifts.yapeNumber}" aria-label="Copiar numero de Yape">
               <span class="yape-copy-card__icon" aria-hidden="true">
