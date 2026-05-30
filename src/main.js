@@ -28,6 +28,9 @@ if (openingMonogram) {
 const createWhatsappUrl = (message) =>
   `https://wa.me/${config.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
+const createWhatsappUrlFor = (phone, message) =>
+  `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
 const createFloralCorners = (variant = 'mixed') => {
   const pairs = {
     mixed: {
@@ -584,12 +587,29 @@ app.innerHTML = `
       </div>
     </section>
 
-    <footer class="signature-footer reveal" aria-label="Credito de diseno">
+    <footer class="signature-footer reveal" aria-label="Creditos de diseno">
       <span class="signature-footer__line"></span>
-      <p>
-        <small>Design by</small>
-        <strong>Kat</strong>
-      </p>
+      <div class="signature-footer__actions">
+        <a
+          class="signature-button signature-button--kat"
+          href="${createWhatsappUrlFor('51932670446', 'Hola, quiero una invitación como la de la página para mi evento.')}"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Contactar a Kat por WhatsApp"
+        >
+          <small>Design by</small>
+          <strong>Kat</strong>
+        </a>
+        <a
+          class="signature-button signature-button--studio"
+          href="${createWhatsappUrlFor('51931278023', 'Hola, quiero una invitación como la de la página para mi evento.')}"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Contactar a Studio27 por WhatsApp"
+        >
+          <img src="${config.images.studio27}" alt="Studio27" />
+        </a>
+      </div>
       <span class="signature-footer__line"></span>
     </footer>
   </main>
