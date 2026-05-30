@@ -89,7 +89,7 @@ export const weddingConfig = {
       'Si deseas acompanarnos con un detalle adicional, recibiremos tu sobre con mucho carino.',
   },
   contact: {
-    whatsappNumber: '51932670446',
+    whatsappNumber: '51955724551',
     confirmText:
       'Hola, confirmo mi asistencia a la boda de Janeth y Dante. Mi nombre es:',
     songText: 'Hola, quiero sugerir esta cancion para la boda:',
