@@ -1823,48 +1823,69 @@ body.invitation-opened .music-floating-button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: min(100%, 290px);
   margin: 0 auto;
+  padding: 1.05rem 0.95rem 1rem;
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 249, 242, 0.94));
+  border: 1px solid rgba(201, 162, 74, 0.18);
+  box-shadow: 0 18px 36px rgba(110, 31, 47, 0.08);
+}
+
+.yape-gift__owner {
+  margin: 0 0 0.72rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2rem, 8vw, 2.65rem);
+  line-height: 0.95;
+  color: var(--wine);
+  text-align: center;
 }
 
 .yape-gift__frame {
-  width: min(100%, 420px);
-  padding: 0.72rem;
-  border-radius: 30px;
+  width: min(100%, 188px);
+  padding: 0.42rem;
+  border-radius: 20px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 249, 242, 0.92));
-  border: 1px solid rgba(201, 162, 74, 0.22);
-  box-shadow: 0 22px 46px rgba(110, 31, 47, 0.12);
+    linear-gradient(180deg, rgba(255, 253, 249, 0.82), rgba(255, 249, 242, 0.88));
+  border: 1px solid rgba(201, 162, 74, 0.18);
+  box-shadow:
+    0 14px 30px rgba(110, 31, 47, 0.07),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.58);
 }
 
 .yape-gift__frame img {
   width: 100%;
   height: auto;
-  border-radius: 22px;
+  border-radius: 16px;
   object-fit: contain;
 }
 
 .yape-copy-card {
-  width: min(100%, 420px);
+  width: min(100%, 188px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 0.9rem;
-  margin-top: 1rem;
-  padding: 0.95rem 1rem;
-  border-radius: 22px;
-  background: rgba(255, 252, 248, 0.92);
-  border: 1px solid rgba(201, 162, 74, 0.22);
-  box-shadow: 0 16px 32px rgba(110, 31, 47, 0.08);
-  text-align: left;
+  justify-items: center;
+  gap: 0.58rem;
+  margin-top: 0.72rem;
+  padding: 0.68rem 0.62rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top, rgba(201, 162, 74, 0.08), transparent 52%),
+    rgba(255, 252, 248, 0.86);
+  border: 1px solid rgba(201, 162, 74, 0.16);
+  box-shadow: 0 12px 26px rgba(110, 31, 47, 0.06);
+  text-align: center;
 }
 
 .yape-copy-card__label {
   display: block;
   margin-bottom: 0.12rem;
   color: var(--gold);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -1872,23 +1893,34 @@ body.invitation-opened .music-floating-button {
   display: block;
   color: var(--wine);
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.65rem, 7vw, 2.1rem);
+  font-size: clamp(1.28rem, 4.6vw, 1.52rem);
   line-height: 1;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .yape-copy-card__button {
-  min-height: 2.7rem;
+  min-height: 2.18rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  padding: 0.62rem 0.9rem;
+  padding: 0.44rem 0.78rem;
   border: 1px solid rgba(110, 31, 47, 0.16);
   border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, rgba(110, 31, 47, 0.95), rgba(138, 45, 66, 0.95));
+  background: rgba(255, 249, 242, 0.9);
+  color: var(--wine);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 8px 18px rgba(110, 31, 47, 0.08);
+}
+
+.yape-copy-card__button {
+  border-color: rgba(201, 162, 74, 0.28);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.98), rgba(255, 246, 238, 0.9));
   color: #fff9f2;
-  box-shadow: 0 12px 24px rgba(110, 31, 47, 0.18);
+  color: var(--wine);
   cursor: pointer;
   transition:
     transform 0.24s ease,
