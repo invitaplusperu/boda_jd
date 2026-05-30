@@ -1,4 +1,3 @@
-
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 export const weddingConfig = {
@@ -105,6 +104,7 @@ export const weddingConfig = {
     petalWine: asset('assets/img/petalo_color_vino.png'),
     separatorGold: asset('assets/img/separado_corazon_dorado.png'),
     separatorWine: asset('assets/img/separador_corazon_vino.png'),
+    studio27: asset('assets/img/studio27.png'),
   },
   gallery: [
     asset('assets/img/foto_dante&janeth.png'),
